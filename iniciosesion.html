@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+  background-color: rgba(11, 182, 5);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;    
+  left: 20px;
+  border-radius: 30px; 
+}
+.button:hover {
+  background-color:rgb(29, 231, 29);
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+</style>
+<body>
+    <h1 class="h1">Iniciar Sesión</h1>
+
+<a href="index.php" class="button">Volver</a>
+
+<div>
+  <form method="POST" action="iniciosesion.php">
+    <label for="fnombre">Nombre de Usuario</label>
+    <input type="text" id="fnombre" name="nombre" placeholder="">
+
+    <label for="fcorreo">Correo</label>
+    <input type="text" id="fcorreo" name="correo" placeholder="">
+
+    <label for="fcontraseña">Contraseña</label>
+    <input type="password" id="fcontraseña" name="contraseña" placeholder="">
+  
+    <input type="submit" name="login" value="Iniciar sesión">  
+  </form>
+</div>
+</body>
+</html>
